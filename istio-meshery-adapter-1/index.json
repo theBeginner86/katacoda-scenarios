@@ -1,5 +1,5 @@
 {
-  "title": "Working with Meshery and Istio",
+  "title": "Working with Meshery and Istio (Kubernetes:1.20)",
   "description": "Use the service mesh manager, Meshery, to operate Istio.",
   "difficulty": "Beginner",
   "time": "10 minutes",
