@@ -7,7 +7,7 @@ echo "Setting up a Minikube cluster"
 
 sleep 10s
 
-cd $HOME && minikube start 
+cd $HOME && minikube start --extra-config=apiserver.service-account-signing-key-file=/var/lib/minikube/certs/sa.key --extra-config=apiserver.service-account-issuer=kubernetes/serviceaccount --extra-config=apiserver.service-account-api-audiences=api 
 
 if [ -e $HOME/.kube/config ]
 then
